@@ -91,5 +91,129 @@ public class homeworkTwo {
         System.out.println("");
         System.out.println("3.uzdevums");
 
+
+        int y;
+        int z;
+
+        System.out.println("Ievadiet pirmo veselo skaitli:");
+        x = scanner.nextInt();
+        System.out.println("Ievadiet otro veselo skaitli:");
+        y = scanner.nextInt();
+        System.out.println("Ievadiet trešo veselo skaitli:");
+        z = scanner.nextInt();
+
+
+        if (x > y && x > z) {
+            System.out.println("Lielākais no ievadītiem skaitļiem: " + x);
+        } else if (x < y && y > z){
+            System.out.println("Lielākais no ievadītiem skaitļiem: " + y);
+        } else {
+            System.out.println("Lielākais no ievadītiem skaitļiem: " + z);
+        }
+
+
+        System.out.println("");
+        System.out.println("4.uzdevums");
+
+        String color;
+
+        System.out.println("Ievadiet luksofora gaismas krāsu (sarkana, dzeltena vai zaļa):");
+        color = scanner.next();
+
+        if (color.equals("zaļa")) {
+            System.out.println("Var šķērsot krustojumu!");
+        } else if (color.equals("dzeltena")){
+            System.out.println("Gatavojies šķērsot ielu!");
+        } else if (color.equals("sarkana")){
+            System.out.println("Nedrīkst šķērsot krustojumu, jāuzgaida!");
+        }else {
+            System.out.println("Lukfors nedarbojas, jāvadās Ceļu satiksmes noteikumos noteiktajā kārtībā!");
+        }
+
+        System.out.println("");
+        System.out.println("5.uzdevums");
+        printBusinessCard();
+        printBusinessCard();
+        printBusinessCard();
+
+        System.out.println("");
+        System.out.println("6.uzdevums");
+        printBusinessCardTwo("Antons", "Stepanovs", "+371 12345678", 1989);
+        printBusinessCardTwo("Andris", "Bērziņš", "+371 87654321", 1979);
+
+
+
+        System.out.println("");
+        System.out.println("7.uzdevums");
+
+        int a;
+        int b;
+
+        System.out.println("Ievadiet pirmo veselo skaitli:");
+        a = scanner.nextInt();
+        System.out.println("Ievadiet otro veselo skaitli:");
+        b = scanner.nextInt();
+
+        int summa =sum(a,b);
+
+        System.out.println("Ievadīto skaitļu summma: " + summa);
+
+
+        System.out.println("");
+        System.out.println("8.uzdevums");
+
+        double c;
+        double d;
+        double e;
+
+        System.out.println("Ievadiet pirmo skaitli:");
+        c = scanner.nextDouble();
+        System.out.println("Ievadiet otro skaitli:");
+        d = scanner.nextDouble();
+        System.out.println("Ievadiet trešo skaitli:");
+        e = scanner.nextDouble();
+
+        double average = average(c,d,e);
+
+        System.out.println("Ievadīto skaitļu vidēja vērtība: " + average);
+
     }
+
+
+
+    static void printBusinessCard(){
+        String name = "Antons";
+        String surname = "Stepanovs";
+        int phoneNumber = 12345678;
+        int birthDate = 1989;
+
+        System.out.println("Vizītkarte");
+        System.out.println("##########");
+        System.out.println("Vārds: " + name );
+        System.out.println("Uzvārds: " + surname );
+        System.out.println("Telefona numurs: +371" + phoneNumber );
+        System.out.println("Dzimšanas gads: " + birthDate );
+        System.out.println("##########");
+    }
+
+    private static void printBusinessCardTwo(String name, String surname, String phoneNumber, int birthDate) {
+
+        System.out.println("Vizītkarte");
+        System.out.println("##########");
+        System.out.println("Vārds: " + name );
+        System.out.println("Uzvārds: " + surname );
+        System.out.println("Telefona numurs: " + phoneNumber );
+        System.out.println("Dzimšanas gads: " + birthDate );
+        System.out.println("##########");
+
+    }
+
+    static int sum(int a, int b){ return a+b;
+    }
+
+    static double average(double c, double d, double e){ return (c+d+e)/3;
+    }
+
+
+
 }

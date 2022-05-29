@@ -17,15 +17,11 @@ public class Metodes {
         int laukums =  calculateArea(a,b);
         System.out.println(laukums);
 
-
     }
 
     static int calculateArea(int a, int b){
         return a*b;
     }
-
-
-
 
 
     static void printetTekstu(){
