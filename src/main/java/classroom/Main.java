@@ -1,3 +1,5 @@
+package classroom;
+
 public class Main {
     public static void main(String[] args) {
         System.out.println("Hello Antons JAVA 1 Lekcija");
@@ -82,7 +84,6 @@ public class Main {
         System.out.println("summa " + summa);
         System.out.println("reizinajums " + reizinajums);
         System.out.println("atlikums " + atlikums);
-
 
 
 
