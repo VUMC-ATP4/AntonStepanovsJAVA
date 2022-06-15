@@ -92,20 +92,21 @@ public class homeworkTwo {
         System.out.println("3.uzdevums");
 
 
+        int f;
         int y;
         int z;
 
         System.out.println("Ievadiet pirmo veselo skaitli:");
-        x = scanner.nextInt();
+        f = scanner.nextInt();
         System.out.println("Ievadiet otro veselo skaitli:");
         y = scanner.nextInt();
         System.out.println("Ievadiet trešo veselo skaitli:");
         z = scanner.nextInt();
 
 
-        if (x > y && x > z) {
-            System.out.println("Lielākais no ievadītiem skaitļiem: " + x);
-        } else if (x < y && y > z){
+        if (f >= y && f > z) {
+            System.out.println("Lielākais no ievadītiem skaitļiem: " + f);
+        } else if (f < y && y > z){
             System.out.println("Lielākais no ievadītiem skaitļiem: " + y);
         } else {
             System.out.println("Lielākais no ievadītiem skaitļiem: " + z);
@@ -208,7 +209,8 @@ public class homeworkTwo {
 
     }
 
-    static int sum(int a, int b){ return a+b;
+    static int sum(int a, int b){
+        return a+b;
     }
 
     static double average(double c, double d, double e){ return (c+d+e)/3;
