@@ -35,9 +35,13 @@ public class Triangle {
     }
 
     public boolean TriangleIsosceles() {
-        if ((a == b) || b == c || c == a) {
+        if (a == b && b != c) {
             ifIsosceles = true;
-        } else {
+        } else if (a != b && b != c && c == a) {
+            ifIsosceles = true;
+        }else if (a != b && b == c) {
+                ifIsosceles = true;
+        }else {
             ifIsosceles = false;
         }
         return ifIsosceles;
