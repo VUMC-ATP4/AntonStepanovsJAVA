@@ -9,11 +9,11 @@ public class Triangle {
     boolean ifEquilateral;
     boolean ifIsosceles;
 
-    Triangle(){
+    public Triangle(){
         System.out.println("Creating a triangle...");
     }
 
-    Triangle (int a, int b, int c) {
+    public Triangle (int a, int b, int c) {
         this.a = a;
         this.b = b;
         this.c = c;
@@ -22,7 +22,7 @@ public class Triangle {
     }
 
     public double Area (){
-        return (Math.sqrt(((a*a+b*b+c*c)*(a*a+b*b+c*c))-2*(a*a+b*b*b*b+c*c*c*c)))/4;
+        return (Math.sqrt(((a*a+b*b+c*c)*(a*a+b*b+c*c))-2*(a*a*a*a+b*b*b*b+c*c*c*c)))/4;
     }
 
     public boolean TriangleEquilateral() {
