@@ -14,6 +14,11 @@ package classroomFive.statika;
 
         }
 
+        public static void makeSound(){
+            System.out.println("auto marka ir : " ); //System.out.println("auto marka ir : " + globalsString); ???
+            System.out.println("Honk honk");
+        }
+
         public String getName() {
             return name;
         }

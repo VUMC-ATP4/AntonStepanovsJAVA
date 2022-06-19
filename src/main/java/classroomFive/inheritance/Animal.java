@@ -15,7 +15,7 @@ public class Animal {
     }
 
     public void makeSound(){
-        System.out.println("Es esmu dzīvnieks. Arhggghh....");
+        System.out.println("Es esmu dzīvnieks. Arhggghhhh....");
     }
 
 

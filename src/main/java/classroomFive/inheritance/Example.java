@@ -7,7 +7,7 @@ public class Example {
         Octopus octopus1 = new Octopus(8, "Astoņkājis");
 
         Chicken vista = new Chicken(2, "Baltā vista");
-        Chicken vistaArVienuKaju = new Chicken(2, "Melnā vista ar vienu kāju");
+        Chicken vistaArVienuKaju = new Chicken(1, "Melnā vista ar vienu kāju");
 
 
         dog1.printLegCount();
@@ -35,6 +35,7 @@ public class Example {
 
         dog1.makeSound();
         vista.makeSound();
+        octopus1.makeSound();
 
 
     }
