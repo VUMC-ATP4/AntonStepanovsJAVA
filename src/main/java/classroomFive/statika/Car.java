@@ -1,6 +1,8 @@
 package classroomFive.statika;
 
     public class Car {
+
+        //private static String globalsString = "teksts123";
         private String name;
         private String color;
         public static String klasesApraksts = "Šī ir auto klase";
