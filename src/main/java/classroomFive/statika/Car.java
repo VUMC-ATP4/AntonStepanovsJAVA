@@ -1,6 +1,8 @@
 package classroomFive.statika;
 
     public class Car {
+
+        //private static String globalsString = "teksts123";
         private String name;
         private String color;
         public static String klasesApraksts = "Šī ir auto klase";
@@ -12,6 +14,11 @@ package classroomFive.statika;
             this.color = color;
             countOfCarsCreatedInSystem++;
 
+        }
+
+        public static void makeSound(){
+            System.out.println("auto marka ir : " ); //System.out.println("auto marka ir : " + globalsString); ???
+            System.out.println("Honk honk");
         }
 
         public String getName() {
